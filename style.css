@@ -10,10 +10,10 @@
 
   * {
     box-sizing: border-box;
+    font-family: 'Ruda', sans-serif;
   }
   body, figure { 
-    margin: 0; background: #101010;
-    font-family: Istok Web, sans-serif;
+  
     font-weight: 100;
   }
   div#captioned-gallery { 
@@ -44,7 +44,7 @@
 	--fs-400: 16px;
 	--color-text: #000000;
 	--color-accent: #a97425;
-  --color-border: #DDDDDD;
+  --color-border: #a97425;
 	--gap-700: 48px;
 	--gap-400: 16px;
 	--gap-300: 12px;
@@ -86,7 +86,7 @@ button{all:unset;}
 	font-size: var(--fs-400, 18px);
   font-weight:600;
   text-align: center;
-	border-bottom: 1px solid var(--color-border, #DDDDDD);
+	border-bottom: 1px solid var(--color-border, #a97425);
   cursor: pointer;
 
 }
@@ -247,7 +247,16 @@ body {
     width: 80px;
   }
 }
-
+.rol{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.info2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 .img-responsive {
   max-width: 100%;
   height: auto;
@@ -882,10 +891,156 @@ a {
     flex-basis: calc(25% - 18px);
   }
 }
-.cards{
-  display: flex;
-  align-items: center;
-}
+
 .s{
   font-weight: 900;
 }
+
+
+
+.test {
+  width:100%;
+  height: 300px;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/aboutus.jpg");
+  position: relative;
+}
+
+.test p{
+  font-size: 23px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  position: absolute;
+  text-align: center;
+  top: 70px;
+  width: 100%;
+}
+.test H1 {
+  font-size: 43px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  position: absolute;
+  text-align: center;
+  top: 100px;
+  width: 100%;
+}
+
+/*text in a box*/
+.test2 {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  position: relative;
+  background-image: url("images/aboutus.jpg");
+}
+
+.test2 h1 {
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+  display: inline;
+  padding: 1%;
+  font-size: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  text-align: center;
+  width: 50%;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.space {
+height: 10px;
+}
+.test2 p {
+  background-color: rgba(0,0,255,0.3);
+  color: #fff;
+  display: inline;
+  padding: 10px;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  text-align: center;
+  width: 440px;
+  position: absolute;
+  top: 220px;
+  left: 50px;
+}
+.space {
+height: 10px;
+}
+
+.test3 {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9) ), url("https://download.unsplash.com/photo-1428604467652-115d9d71a7f1");
+  position: relative;
+}
+
+.test3 p {
+  font-size: 22px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  position: absolute;
+  bottom: 1%;
+  width: 100%;
+  text-align: center;
+}
+
+
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.tabs .tab {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ccc;
+  cursor: pointer;
+}
+.tabs .tab.active,
+.tabs .tab:hover {
+  color: black;
+  border-bottom-color: #a97425;
+}
+.tab-content {
+  display: none;
+  max-width: 500px;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+  padding: 1rem 2rem;
+}
+.tab-content.active {
+  display: block;
+}
+
+
+
+.navbar-nav li {
+  margin-right: 10px;
+}
+.navbar-toggler {
+  margin-right: 10px;
+}
+
+
+#scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  font-size: 18px;
+  background-color: #a97425;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
