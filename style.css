@@ -1024,7 +1024,7 @@ height: 10px;
   display: none;
   max-width: 500px;
   line-height: 1.5;
-  border: 1px solid #ccc;
+  
   padding: 1rem 2rem;
 }
 .tab-content.active {
@@ -1398,11 +1398,7 @@ label{
  
 }
 
-.active {
-  background-color: #a97425;; /* Change to your desired active color */
-  color: #fff;
-  border: 1px solid black;
-}
+
 
 .test {
   position: relative;
@@ -1467,10 +1463,10 @@ label{
 
 .tab {
   float: left;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+ 
+ 
   width: 100%;
-  height: 300px;
+ 
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -1596,10 +1592,24 @@ input:focus-visible + label {
   box-sizing: border-box;
 }
 
-body {
-  padding: 30px;
-}
+
 
 .tabset {
   max-width: 335em;
+}
+.categories{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100px;
+}
+.school{
+  padding-top: 30px;
+}
+.education-input-box{
+  width: 2900px;
+}
+
+
+.home-navbar{
+  height: 90px!important;
 }
