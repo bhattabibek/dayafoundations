@@ -127,9 +127,7 @@
                     <li class="nav-item">
                       <a class="nav-link" style="color: white; padding-right: 25px;" href="gallery.html">Gallery</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" style="color: white;" href="#">Contact Us</a>
-                    </li>
+                  
                   </ul>
                 </div>
               </div>
@@ -478,6 +476,27 @@ tabs.forEach((tab) => {
     });
     const target = document.querySelector(tab.dataset.tabTarget);
     target.classList.add("active");
+  });
+});
+
+</script>
+<script>  document.addEventListener('DOMContentLoaded', function () {
+  const expandButton = document.getElementById('expandButton');
+  const expandedText = document.getElementById('expandedText');
+  let isExpanded = false;
+  
+  expandButton.addEventListener('click', function () {
+      if (!isExpanded) {
+          expandedText.classList.remove('hidden');
+          expandButton.textContent = 'Read Less';
+          expandButton.style.transform = 'translateY(100%)'; // Move the button down
+      } else {
+          expandedText.classList.add('hidden');
+          expandButton.textContent = 'Read More';
+          expandButton.style.transform = 'translateY(0)'; // Reset button position
+      }
+      
+      isExpanded = !isExpanded;
   });
 });
 </script>

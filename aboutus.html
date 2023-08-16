@@ -123,9 +123,7 @@
                     <li class="nav-item">
                       <a class="nav-link" style="color: white; padding-right: 25px;padding-right: 50px;" href="gallery.html">Gallery</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" style="color: white;" href="#">Contact Us</a>
-                    </li>
+                    
                   </ul>
                 </div>
               </div>
@@ -176,41 +174,23 @@
 
 
 
-<div class="container-fluid" style="background-color:#f3f3f3;padding-top: 72px;padding-bottom: 72px;"
-    >
+<div class="container">
   <div class="row">
-    <div class="col-md-12 text-center">
-      <h2 class="mt-5">LATE Mr DayaRam Bhakta Mathema</h2>
-      <i class="d-block mt-1">A Statesman, Philanthropist and Social Entrepreneur</i>
-      <br>
-    </div>
-  </div>
-  <div class="row justify-content-evenly ">
-    <div class="col-md-4">
-      <img style="padding-left: 40px;" src="images/dayaram.png" class="img-fluid" alt="Dayaram Mathama">
-    </div>
-    <div class="col-md-8">
-      <div class="mt-4 mt-md-0">
-        LATE Dayaram Bhakta Mathema, a man who devoted more than five decades of his life to state and public service, lived with the dream to see a better community with better opportunities for education, health service and preserved cultural legacy. Born on January 25, 1927, Mr. Mathema saw the bitter reality of Nepalese society with daunting status of education and health services during the early 40's itself when he worked as a statesman for the Royal family.
-        <br>
-        <button id="readMoreButton" class="mt-3" style="background-color: #a97425; color: white; border: none; outline: none; padding: 15px;">
-          READ MORE
-          <i class="fas fa-arrow-right"></i>
-      </button>
-      <div id="hiddenContent" style="display: none;padding-top: 20px;">
-        <!-- Content to be shown/hidden -->
-        <p>
-          Emerging from this long-standing desire to contribute to the society, it cultivated a vision in Mr.Mathema that took the form of Daya Foundation. The Foundation has a firm aim to bring positive changes in education, health and culture.<br> Mr. Mathema also believed strongly in women's higher education and supported their empowerment. With this belief, Daya Foundation launched its first project "Kanti Ishwari Scholarship" on August, 2009 which has been providing scholarship to five women pursuing masters' course of women studies in Padma Kanya Campus, Tribhuwan University every year.<br><br>
-          
-          There has been no looking back since then. The foundation has initiated mid-day meal program for Bidhodaya School, Kathmandu and Bhairav Prathmik School, Dhulikhel with the intention to fulfill nutritional needs of students studying in government schools.<br> It has been supporting another institution named Early Rehabilitation Centre (ERC) since its early days. The Foundation supports publication of Braille books every year, and also has launched social entrepreneurship activities for the visually-impaired. <br>The foundation began its intervention in health sector by joining hands with Dhulikhel hospital, Chetrapati clinic and Nepal Ambulance Service by sponsoring health service machines, and organizing comprehensive community health camps. Similarly, it is also actively engaged to restore temples, water sprouts and preserving the historic house of Mathema family situated at Om: Bahal tole, Kathmandu.<br>
-          
-          Mr. Mathema passed away in 2008, but his vision and dream is alive in the form of Daya Foundation. The foundation is continuously working to develop ingenious programs for community welfare and development at present.</p>
-    </div>
-      </div>
-    </div>
-   
-
- 
+    <div class="col-lg-4" > <img style="width: 400px;" src="images/dayaram.png" class="img-fluid" alt="Dayaram Mathama"></div>
+    <div class="col-lg-8">
+      <div id="wrap">
+        <h2>LATE Mr DayaRam Bhakta Mathema</h2>
+        <i>A Statesman , Philanthropist and social Entrepreneur</i>
+        <p>LATE Dayaram Bhakta Mathema, a man who devoted more than five decades of his life to state and public service, lived with the dream to see a better community with better opportunities for education, health service and preserved cultural legacy. Born on January 25, 1927, Mr. Mathema saw the bitter reality of Nepalese society with daunting status of education and health services during the early 40's itself when he worked as a statesman for the Royal family.<br>
+         
+      <a href="#" id="example-show" class="showLink" onclick="showHide('example');return false;">Read more.</a></p>
+        <div id="example" class="more">
+           <p>Emerging from this long-standing desire to contribute to the society, it cultivated a vision in Mr.Mathema that took the form of Daya Foundation. The Foundation has a firm aim to bring positive changes in education, health and culture.<br> Mr. Mathema also believed strongly in women's higher education and supported their empowerment. With this belief, Daya Foundation launched its first project "Kanti Ishwari Scholarship" on August, 2009 which has been providing scholarship to five women pursuing masters' course of women studies in Padma Kanya Campus, Tribhuwan University every year.<br><br>
+            There has been no looking back since then. The foundation has initiated mid-day meal program for Bidhodaya School, Kathmandu and Bhairav Prathmik School, Dhulikhel with the intention to fulfill nutritional needs of students studying in government schools.<br> It has been supporting another institution named Early Rehabilitation Centre (ERC) since its early days. The Foundation supports publication of Braille books every year, and also has launched social entrepreneurship activities for the visually-impaired. <br>The foundation began its intervention in health sector by joining hands with Dhulikhel hospital, Chetrapati clinic and Nepal Ambulance Service by sponsoring health service machines, and organizing comprehensive community health camps. Similarly, it is also actively engaged to restore temples, water sprouts and preserving the historic house of Mathema family situated at Om: Bahal tole, Kathmandu.<br>
+            Mr. Mathema passed away in 2008, but his vision and dream is alive in the form of Daya Foundation. The foundation is continuously working to develop ingenious programs for community welfare and development at present.</p>
+           <p><a href="#" id="example-hide" class="hideLink" onclick="showHide('example');return false;">Show Less</a></p>
+        </div>
+      </div></div>
   </div>
 </div>
 
@@ -559,6 +539,18 @@ tabs.forEach((tab) => {
   });
 });
 </script>
+<script>function showHide(shID) {
+  if (document.getElementById(shID)) {
+     if (document.getElementById(shID+'-show').style.display != 'none') {
+        document.getElementById(shID+'-show').style.display = 'none';
+        document.getElementById(shID).style.display = 'block';
+     }
+     else {
+        document.getElementById(shID+'-show').style.display = 'inline';
+        document.getElementById(shID).style.display = 'none';
+     }
+  }
+}</script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
