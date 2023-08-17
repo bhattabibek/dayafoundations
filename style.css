@@ -10,6 +10,8 @@
 
 
   * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Ruda', sans-serif;
 
@@ -344,6 +346,9 @@ body {
   width: 340px;
   top: 298px;
   left: 51px;
+}
+.copyright{
+  width: 100% !important;
 }
 .partner {
   text-align: center;
@@ -730,7 +735,9 @@ padding-top: 90px;
 .navbar span{
   font-size: 15px;
 }
-
+.education-sector{
+  background-color: #f3f3f3;
+}
 
 
 
@@ -1062,12 +1069,18 @@ height: 10px;
 
 
 
-
+.testing{
+  position: relative;
+  padding-right: 30px;
+  margin-top: -20px !important;
+}
 
 
 .test {
   position: relative;
-  padding-right: 30px; /* Adjust this value to create space for the icon */
+  padding-right: 30px;
+  margin-top: -1px;
+  /* Adjust this value to create space for the icon */
 }
 
 .test a {
@@ -1686,7 +1699,11 @@ a.showLink:hover, a.hideLink:hover{
 
 
 
-
+.map
+{
+  margin-top: -20px;
+  
+}
 
 #news-slider{
   margin-top: 80px;
@@ -1813,4 +1830,43 @@ a.showLink:hover, a.hideLink:hover{
   .post-slide .post-content{
       padding: 0px 15px 25px 15px;
   }
+}
+
+.buttons {
+  background-color: white; /* Default button color */
+  padding: 5px 10px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons.active {
+  background-color: #a97425; /* Active button color */
+}
+@media only screen and (max-width:321px) {
+  .introduction h1{
+    text-align: center;
+      font-size: 40px !important;
+  }
+  .daya{
+  padding-left: 40px;
+  }
+}
+@media only screen and (max-width:480px) {
+  .introduction h1{
+    text-align: center;
+      font-size: 40px !important;
+  }
+  .daya{
+    padding-left: 40px;
+    }
+}
+@media only screen and (max-width:990px) {
+  .introduction h1{
+    text-align: center;
+      font-size: 40px !important;
+  }
+  .daya{
+    padding-left: 40px;
+    }
 }

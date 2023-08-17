@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -123,7 +125,9 @@
                     <li class="nav-item">
                       <a class="nav-link" style="color: white; padding-right: 25px;padding-right: 50px;" href="gallery.html">Gallery</a>
                     </li>
-                   
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html" style="color: white;">Contact Us</a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -138,43 +142,50 @@
 
 
 
+
 <div class="test" style="position: relative;">
-  <a href="education.html"  class="arrow-icon left" style="position: absolute; top: 50%; left: 0;">
-    <span style="" class="material-symbols-outlined">
-      arrow_back
+  <a href="education.html" class="arrow-icon left" style="position: absolute; top: 50%; left: 0;">
+      <span class="material-symbols-outlined">
+          arrow_back
       </span>
   </a>
   <h1>Health
-    <br> <p>Home / Our Work</p>
+      <br>
+      <p>Home / Our Work</p>
   </h1>
   <a href="culture.html" class="arrow-icon right">
-    <span class="material-symbols-outlined">
-      arrow_right_alt
+      <span class="material-symbols-outlined">
+          arrow_right_alt
       </span>
   </a>
 </div>
 
 <div class="container">
-  <div class="row">
-    <div class="col-lg-6">
-      <img width="100%" src="images/h.png" alt="">
-      <h2>Science fair at Adarsha Secondary School</h2>
-<h5>
-        Congratulations to the brilliant students from Nepal Adarsha Secondary School for their amazing science fair. Daya Foundation is glad to have sponsored the prizes to support and encourage the next generation of innovators. Keep up the great work,Students.</h5>
-    </div>
-    <div class="col-lg-6">
-      <form class="form-search search-box " method="get" action="#">
-        <input  type="search" name="search" placeholder="">
-        <button type="submit">Search</button>
-        
-    </form>
-    <h3>Category</h3>
-    <a href="health.html"><button class="buttons" onclick="toggleActive(this)">Health</button></a><br>
-    <a href="culture.html"><button class="buttons" onclick="toggleActive(this)">Culture</button></a><br>
-    <a href="education.html"><button class="buttons" onclick="toggleActive(this)">Education</button></a><br>
-    </div>
+  <div class="row" style="padding-top: 40px;">
+      <div class="col-lg-6">
+          <img width="100%" src="images/h.png" alt="">
+          <h2>Science fair at Adarsha Secondary School</h2>
+          <h5>
+              Congratulations to the brilliant students from Nepal Adarsha Secondary School for their amazing science fair. Daya Foundation is glad to have sponsored the prizes to support and encourage the next generation of innovators. Keep up the great work, Students.
+          </h5>
+      </div>
+      <div class="col-lg-6">
+         
+          <div>
+              <h3>Category</h3>
+              <div class="information">
+                  <a href="health.html"><button class="buttons">Health</button></a><br>
+                  <a href="culture.html"><button class="buttons">Culture</button></a><br>
+                  <a href="education.html"><button class="buttons">Education</button></a><br>
+              </div>
+          </div>
+      </div>
   </div>
 </div>
+
+
+
+
 
 <div class="container-fluid">
   <div class="container">
@@ -506,6 +517,27 @@ tabs.forEach((tab) => {
   button.classList.add('active');
 }
 </script>
+<script>// Function to set the active button based on the current URL
+ // Function to set the active button based on the current URL
+function setActiveButton() {
+    var buttons = document.getElementsByClassName('buttons');
+    var currentPath = window.location.pathname;
+
+    for (var i = 0; i < buttons.length; i++) {
+        var buttonPath = buttons[i].parentNode.getAttribute('href');
+
+        if (currentPath === buttonPath) {
+            buttons[i].classList.add('active');
+        } else {
+            buttons[i].classList.remove('active');
+        }
+    }
+}
+
+// Run the function when the page loads
+window.addEventListener('load', setActiveButton);
+
+  </script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
