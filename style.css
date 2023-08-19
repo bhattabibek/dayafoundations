@@ -1870,3 +1870,84 @@ a.showLink:hover, a.hideLink:hover{
     padding-left: 40px;
     }
 }
+
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee {
+  display: flex;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+
+.work-card {
+  background-color: #a97425;
+}
+
+.work-card img.img {
+  width:100%;
+  height:100px;
+  object-fit:cover;
+  border: 2px solid white;
+}
+
+.work-card img.bottom {
+  height: 60px;
+}
+
+.work-card .img-top {
+  width: 100%;
+}
+
+.work-card h3 {
+  text-align: center; 
+  padding: 8px 0; 
+  color: white;
+}
+
+.work-card:hover {
+  background-color: white;;
+}
+
+.work-card:hover .img-top {
+  width: 80%;
+}
+
+.work-card:hover > h3 {
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
