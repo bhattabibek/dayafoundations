@@ -150,6 +150,7 @@ body {
 
 .parent {
   position: relative;
+
 }
 .imgs h3 {
   position: absolute;
@@ -547,8 +548,8 @@ body {
   width: 140px;
   height: 140px;
   position: absolute;
-  bottom: -15px;
-  left: 50px;
+  bottom: -5px;
+  left: 160px;
   z-index: -1;
 }
 .parenttwo {
@@ -559,7 +560,7 @@ body {
   width: 140px;
   height: 140px;
   position: absolute;
-  top: -380px;
+  top: -323px;
   left: 580px;
   z-index: -1;
 }
@@ -1940,6 +1941,15 @@ a.showLink:hover, a.hideLink:hover{
 
 
 
+@media only screen and (max-width:825px) {
+  .introduction h1{
+    text-align: center;
+      font-size: 40px !important;
+  }
+  .daya{
+    padding-left: 40px;
+    }
+}
 
 
 
@@ -1950,4 +1960,9 @@ a.showLink:hover, a.hideLink:hover{
 
 
 
-
+.contacts{
+  background-color:#a97425 ;
+  color: white;
+  width: 1440px;
+  height:340px;
+}
