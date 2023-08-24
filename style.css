@@ -1636,7 +1636,7 @@ input:focus-visible + label {
 .categories{
   display: flex;
   flex-wrap: wrap;
-  width: 100px;
+  width: 50px;
 }
 .school{
   padding-top: 30px;
@@ -1997,6 +1997,7 @@ a.showLink:hover, a.hideLink:hover{
   position: absolute;
   top: 50%;
   left: 50%;
+  overflow-y:scroll;
   transform: translate(-50%, -50%);
 }
 
@@ -2094,10 +2095,11 @@ ul {
 a {
     color: inherit;
 }
-
-img {
-    max-width: 100%;
+.popup-content {
+  max-height: 80vh; /* Set the maximum height of the popup content */
+  overflow-y: auto; /* Add vertical scroll if content exceeds the height */
 }
+
 
 .section {
     padding: var(--padding-v) var(--padding-h);
@@ -2147,6 +2149,11 @@ img {
     }
 }
 
+@media screen and (max-width: 1024px) {
+  .categories {
+    display: hidden;
+  }
+}
 @media screen and (min-width: 62em) {
     .portfolio .portfolio-item {
         width: 33.3333%;
@@ -2245,6 +2252,12 @@ label{
   }
 }
 
+.gallery-filter label {
+  background-color: #e0e0e0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 
 h3 a{
@@ -2252,4 +2265,28 @@ h3 a{
 }
 .cards:hover{
   color: black !important;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .center-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+  }
+}
+
+
+
+
+
+
+
+#slidy-container { 
+  width: 33%; overflow: hidden; margin: 0 auto;
+  border-radius: 20px;
 }
